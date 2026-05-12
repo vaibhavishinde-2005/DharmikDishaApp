@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Virgo">
+
+    <!-- 🔹 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarVirgo"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/system_on_error_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Virgo"
+        app:titleTextColor="#FFFFFF" />
+
+    <!-- 🔹 Scroll area for content -->
+    <ScrollView
+        android:id="@+id/scrollViewVirgo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarVirgo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Virgo Symbol -->
+            <ImageView
+                android:id="@+id/virgoSymbol"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/virgo"
+                android:contentDescription="Virgo Icon" />
+
+            <!-- Virgo Title -->
+            <TextView
+                android:id="@+id/virgoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virgo(कन्या)"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="12dp" />
+
+            <!-- Virgo Description -->
+            <TextView
+                android:id="@+id/virgoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Virgo is analytical, practical, and detail–oriented. People born under Virgo value organization, clarity, and self-improvement. They are thoughtful, intelligent, and dedicated, often striving for perfection. Although gentle and helpful, Virgos may become overly critical due to high standards."
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Traits Header -->
+            <TextView
+                android:id="@+id/traitsHeaderVirgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Traits"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Traits List -->
+            <TextView
+                android:id="@+id/traitsListVirgo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Practical\n• Analytical\n• Responsible\n• Helpful\n• Calm\n• Perfectionist"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Compatible Signs Header -->
+            <TextView
+                android:id="@+id/compatibleHeaderVirgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Compatible Signs"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Compatible Signs List -->
+            <TextView
+                android:id="@+id/compatibleSignsVirgo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Taurus\n• Capricorn\n• Cancer\n• Scorpio"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

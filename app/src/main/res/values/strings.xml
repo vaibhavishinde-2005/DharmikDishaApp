@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Dharmik Disha</string>
+    <string name="login">Login</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="password">Password</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_aries">Aries</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="welcome">Welcome!</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">Login failed</string>
+
+    <string name="pending">PENDING</string>
+    <string name="accepted">ACCEPTED</string>
+    <string name="confirmed">CONFIRMED</string>
+
+    <string name="satyanarayan_title">Satyanarayan Pooja</string>
+    <string name="satyanarayan_subtitle">For peace, prosperity and family harmony</string>
+
+    <string name="benefits">Benefits</string>
+    <string name="pooja_details">Pooja Details</string>
+    <string name="required_samagri">Required Samagri</string>
+
+    <string name="samagri_note">Pandit can bring samagri if requested.</string>
+    <string name="book_satyanarayan">Book Satyanarayan Pooja</string>
+
+    <string name="default_web_client_id">
+    410862615610-lgc502umioavvid70dv1h8h2uo76uf18.apps.googleusercontent.com
+</string>
+
+    <string name="uh_oh">Uh-oh!</string>
+
+</resources>

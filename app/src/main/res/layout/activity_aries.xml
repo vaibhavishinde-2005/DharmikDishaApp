@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aries">
+
+    <!-- 🔹 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAries"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/system_on_error_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Aries"
+        app:titleTextColor="#FFFFFF" />
+
+    <!-- 🔹 Scroll area for content -->
+    <ScrollView
+        android:id="@+id/scrollViewAries"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarAries"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Aries Symbol -->
+            <ImageView
+                android:id="@+id/ariesSymbol"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/aries"
+                android:outlineAmbientShadowColor="@color/black"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:contentDescription="Aries Icon" />
+
+            <!-- Aries Title -->
+            <TextView
+                android:id="@+id/ariesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aries(मेष)"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="12dp" />
+
+            <!-- Aries Description -->
+            <TextView
+                android:id="@+id/ariesDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aries is the first sign of the zodiac. They are known for their energy, courage, and leadership. Aries individuals are passionate, competitive, and never afraid to take risks."
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Traits Header -->
+            <TextView
+                android:id="@+id/traitsHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Traits"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Traits List -->
+            <TextView
+                android:id="@+id/traitsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Brave\n• Confident\n• Passionate\n• Honest\n• Energetic\n• Impulsive"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Compatible Signs Header -->
+            <TextView
+                android:id="@+id/compatibleHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Compatible Signs"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Compatible Signs List -->
+            <TextView
+                android:id="@+id/compatibleSigns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Leo\n• Sagittarius\n• Gemini\n• Aquarius"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/each_item"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="52dp"
+            android:layout_height="60dp"
+            android:src="@drawable/panditimg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ServiceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Service Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@id/imageView3"
+            app:layout_constraintEnd_toStartOf="@id/bookButton"
+            app:layout_constraintTop_toTopOf="@id/imageView3"
+            app:layout_constraintHorizontal_bias="0" />
+
+        <TextView
+            android:id="@+id/ServicerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Service Provider"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="@id/ServiceName"
+            app:layout_constraintEnd_toStartOf="@id/bookButton"
+            app:layout_constraintTop_toBottomOf="@id/ServiceName"
+            app:layout_constraintHorizontal_bias="0" />
+
+
+        <TextView
+            android:id="@+id/yrsofexperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Experince"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@id/bookButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/ServiceName"
+            app:layout_constraintTop_toBottomOf="@id/ServicerName" />
+
+        <Button
+            android:id="@+id/bookButton"
+            android:layout_width="88dp"
+            android:layout_height="39dp"
+            android:text="Book"
+            android:background="@drawable/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

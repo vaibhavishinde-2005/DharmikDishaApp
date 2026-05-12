@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "410862615610",
+    "firebase_url": "https://dharmik-disha-756a6-default-rtdb.firebaseio.com",
+    "project_id": "dharmik-disha-756a6",
+    "storage_bucket": "dharmik-disha-756a6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410862615610:android:bc25e0edcc3597f3aac903",
+        "android_client_info": {
+          "package_name": "com.example.myproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410862615610-5hkii92huo671pe2lh5fru4gmv4t6pci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myproject",
+            "certificate_hash": "262c8a29cdf3de0fe6429063c01cf32d6980e3a4"
+          }
+        },
+        {
+          "client_id": "410862615610-lgc502umioavvid70dv1h8h2uo76uf18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDgwKwAcgbK8FVv4N2g3omuZgRg2xrKbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410862615610-lgc502umioavvid70dv1h8h2uo76uf18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

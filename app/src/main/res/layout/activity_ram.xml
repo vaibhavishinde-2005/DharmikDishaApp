@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aartibackground"
+    tools:context=".ram">
+
+    <!-- TOP TOOLBAR WITH BACK ICON -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbarRam"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@android:color/system_on_error_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:title="Shree Ram Aarti" />
+
+    <!-- SCROLLABLE RAM AARTI -->
+    <ScrollView
+        android:id="@+id/scrollAartiRam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/topToolbarRam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/aartiTextRam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#5A3A1A"
+            android:textSize="22sp"
+            android:lineSpacingExtra="6dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+
+            android:text="Shree Ramchandra Kripalu Bhajman\n
+Harana Bhava Bhaya Darunam\n
+Navkanja Lochan Kanja Mukha\n
+Kar Kanja Pada Kanjarunam\n\n
+
+Kandarpa Aganita Amit Chhavi\n
+Nav Neel Nirad Sundaram\n
+Pata Peet Manahu Tan Sohe\n
+Dharani Dhara Mangal Bhavanam\n\n
+
+Bhaju Deen Bandhu Dinesh Danav\n
+Daitya Vansha Nikandanam\n
+Raghukul Tilak Siyā Rāmachandra\n
+Bhava Bhaya Bhanganam\n\n
+
+Aarti Shri Ram Ji Ki\n
+Uttaradaayak Bhakt Janon Ki\n
+Sukh Saagar Bhayo Daya Sindhu\n
+Janaki Vallabh Ram\n\n
+
+Ram Lakshman Janaki Jai Bol\n
+Bolo Hanuman Ki Jai\n
+Siyāvar Ramchandra Ki Jai\n
+Pavanputra Hanuman Ki Jai" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

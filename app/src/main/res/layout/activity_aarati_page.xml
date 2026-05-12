@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <!-- TOP TOOLBAR -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@android:color/system_on_error_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Aarti" />
+
+    <!-- SCROLL CONTENT -->
+    <ScrollView
+        android:id="@+id/scrollArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topToolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- MAIN WRAPPER -->
+        <LinearLayout
+            android:id="@+id/mainWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- BLOCK 1 -->
+            <LinearLayout
+                android:id="@+id/blockGanesh"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#EDBD55"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/ganpati" />
+
+                <LinearLayout
+                    android:id="@+id/block1_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shree Ganehsa Aarti"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block1_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Jay Ganesha Jay Ganesh deva"
+                        android:textColor="#6E4819"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BLOCK 2 -->
+            <LinearLayout
+                android:id="@+id/blockLakshmi"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#F8D483"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/lakshmi" />
+
+                <LinearLayout
+                    android:id="@+id/block2_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lakshmi Mata Aarti"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block2_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Jay Lakshmi Mata"
+                        android:textColor="#6E4819"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BLOCK 3 -->
+            <LinearLayout
+                android:id="@+id/blockShiv"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#EDBD55"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/shiv" />
+
+                <LinearLayout
+                    android:id="@+id/block3_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block3_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shiv Aarati"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block3_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Om Jay Shiv Omkara "
+                        android:textColor="#6E4819"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BLOCK 4 -->
+            <LinearLayout
+                android:id="@+id/blockHnuman"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#F8D483"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/hanuman" />
+
+                <LinearLayout
+                    android:id="@+id/block4_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block4_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hanuman Aarti"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block4_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Aarati kije Hanuman Lala Ki"
+                        android:textColor="#6E4819"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BLOCK 5 -->
+            <LinearLayout
+                android:id="@+id/blockKrishan"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#EDBD55"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/krishan" />
+
+                <LinearLayout
+                    android:id="@+id/block5_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block5_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shree Krishn"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block5_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Aarti Kunj Bihari Ki"
+                        android:textColor="#6E4819"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BLOCK 6 -->
+            <LinearLayout
+                android:id="@+id/blockRam"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#F8D483"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/ram" />
+
+                <LinearLayout
+                    android:id="@+id/block6_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block6_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shree Ram Aarti"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block6_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Rama Chandra Kripalu Bhaguman"
+                        android:textColor="#6E4819"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BLOCK 7 -->
+            <LinearLayout
+                android:id="@+id/blockSatyanarayan"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#EDBD55"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/satyanarayan" />
+
+                <LinearLayout
+                    android:id="@+id/block7_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block7_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Satyanarayan Bhagvan Aarati "
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block7_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Jay Lashmi Ramana"
+                        android:textColor="#6E4819"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BLOCK 8 -->
+            <LinearLayout
+                android:id="@+id/blockShani"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:background="#F8D483"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_block8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:src="@drawable/shani" />
+
+                <LinearLayout
+                    android:id="@+id/block8_text_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/block8_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shani Dev Aarti"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/block8_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Jay Jay Shree Shani Dev"
+                        android:textColor="#6E4819"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

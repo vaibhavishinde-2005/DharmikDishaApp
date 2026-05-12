@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="orange">#FF8C42</color>
+    <color name="grey">#A0A0A0</color>
+    <color name="toolbar_bg">#FF0000</color> <!-- red color -->
+    <color name="user_card_bg">#FFD580</color>
+    <color name="pandit_card_bg">#A3D2CA</color>
+    <color name="acceptedColor">#4CAF50</color>
+    <color name="rejectedColor">#F44336</color>
+    <color name="pendingColor">#2196F3</color>
+   <color name="purple"><![CDATA[#000]]></color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

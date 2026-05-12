@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aartibackground"
+    tools:context=".Shiv">
+
+    <!-- TOP TOOLBAR -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbarShiv"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@android:color/system_on_error_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Shree Shiv Aarti" />
+
+    <!-- SCROLLABLE SHIV AARTI TEXT -->
+    <ScrollView
+        android:id="@+id/scrollAartiShiv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topToolbarShiv"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/aartiTextShiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="6dp"
+            android:text="Om Jai Shiv Omkara\n
+Swami Jai Shiv Omkara\n
+Brahma Vishnu Sadashiv\n
+Ardhangi Dhara\n\n
+
+Ekanan Chaturanan Panchanan Rajey\n
+Hansasun Garudasan Vrishabh Savaare\n
+Om Jai Shiv Omkara\n\n
+
+Do Bhuj Chaar Bhuj Das Bhuj Tehi Shringaari\n
+Tin Roop Nirakhat Tribhuvan Jan Tarasaaré\n
+Om Jai Shiv Omkara\n\n
+
+Akshaylinga Bhola Bhandaari\n
+Tripurari Parvati Pyaare\n
+Nandi Baith Baajé Damru\n
+Bholenath Ujiyare\n\n
+
+Shiv Shambhu Har Har Deva\n
+Shivaya Namah Shivaya\n
+Bhakton Ki Sankat Saare\n
+Kar Do Mangal Maya"
+            android:textAlignment="center"
+            android:textColor="#5A3A1A"
+            android:textSize="22sp"
+
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

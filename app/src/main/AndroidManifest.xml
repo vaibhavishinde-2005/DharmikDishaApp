@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myproject">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/panditimg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/panditimg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject">
+        <activity
+            android:name=".feedback"
+            android:exported="false" />
+        <activity
+            android:name=".payment"
+            android:exported="true" />
+        <activity
+            android:name=".BookingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PanditDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Aquarius"
+            android:exported="true" />
+        <activity
+            android:name=".Fragment_item"
+            android:exported="true" /> <!-- ================= LAUNCHER / SPLASH ================= -->
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- ================= AUTHENTICATION ================= -->
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".userlogin"
+            android:exported="true" />
+        <activity
+            android:name=".PanditHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".panditlogin"
+            android:exported="true" /> <!-- ================= HOME & SEARCH ================= -->
+        <activity
+            android:name=".HomePage1"
+            android:exported="true" />
+        <activity
+            android:name=".Search"
+            android:exported="true" />
+        <activity
+            android:name=".firstactivity"
+            android:exported="true" /> <!-- ================= PUJA / CEREMONY PAGES ================= -->
+        <activity
+            android:name=".Sanskar"
+            android:exported="true" />
+        <activity
+            android:name=".Shraddha"
+            android:exported="true" />
+        <activity
+            android:name=".Yadnya"
+            android:exported="true" />
+        <activity
+            android:name=".Shantipooja"
+            android:exported="true" />
+        <activity
+            android:name=".Shani"
+            android:exported="true" />
+        <activity
+            android:name=".satyanarayan"
+            android:exported="true" />
+        <activity
+            android:name=".satyanarayan_aarati"
+            android:exported="true" />
+        <activity
+            android:name=".AaratiPage"
+            android:exported="true" /> <!-- ================= GOD PAGES ================= -->
+        <activity
+            android:name=".Ganpati"
+            android:exported="true" />
+        <activity
+            android:name=".Lakshmi"
+            android:exported="true" />
+        <activity
+            android:name=".Shiv"
+            android:exported="true" />
+        <activity
+            android:name=".krishan"
+            android:exported="true" />
+        <activity
+            android:name=".ram"
+            android:exported="true" />
+        <activity
+            android:name=".hanuman"
+            android:exported="true" /> <!-- ================= HOROSCOPE ================= -->
+        <activity
+            android:name=".HoroscopePage"
+            android:exported="true" />
+        <activity
+            android:name=".Aries"
+            android:exported="true" />
+        <activity
+            android:name=".Taurus"
+            android:exported="true" />
+        <activity
+            android:name=".Gemini"
+            android:exported="true" />
+        <activity
+            android:name=".Cancer"
+            android:exported="true" />
+        <activity
+            android:name=".Leo"
+            android:exported="true" />
+        <activity
+            android:name=".Virgo"
+            android:exported="true" />
+        <activity
+            android:name=".Libra"
+            android:exported="true" />
+        <activity
+            android:name=".Scorpio"
+            android:exported="true" />
+        <activity android:name=".MyOrdersActivity" />
+        <activity
+            android:name=".Sagittarius"
+            android:exported="true" />
+        <activity
+            android:name=".Capricorn"
+            android:exported="true" />
+        <activity
+            android:name=".Pisces"
+            android:exported="true" /> <!-- ================= CART / PAYMENT ================= -->
+        <activity
+            android:name=".pay_out"
+            android:exported="true" />
+        <activity
+            android:name=".each_activity"
+            android:exported="true" />
+    </application>
+
+</manifest>

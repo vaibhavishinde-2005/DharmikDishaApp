@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backgroundimg"
+    android:padding="20dp"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Dharmik Disha"
+        android:textColor="@color/material_dynamic_secondary10"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Login to your Account"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/mark_email_unread"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#888888" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/lock"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#888888" />
+
+    <!-- 🔥 Forgot Password -->
+    <TextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="280dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="end"
+        android:minHeight="48dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:backgroundTint="#1E4BD1"
+        android:textColor="@android:color/white" />
+
+    <!-- OR Divider -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Google Login -->
+    <Button
+        android:id="@+id/googleLoginButton"
+        android:layout_width="280dp"
+        android:layout_height="59dp"
+        android:drawableLeft="@drawable/googleg_standard_color_18"
+        android:backgroundTint="@android:color/white"
+        android:drawablePadding="8dp"
+        android:text="Login with Google"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account? Sign up"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

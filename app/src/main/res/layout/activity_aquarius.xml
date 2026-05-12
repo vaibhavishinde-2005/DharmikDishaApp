@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".">
+
+    <!-- 🔹 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAquarius"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/system_on_error_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Aquarius"
+        app:titleTextColor="#FFFFFF" />
+
+    <!-- 🔹 Scroll area for content -->
+    <ScrollView
+        android:id="@+id/scrollViewAquarius"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarAquarius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Aquarius Symbol -->
+            <ImageView
+                android:id="@+id/aquariusSymbol"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/aquarius"
+                android:contentDescription="Aquarius Icon" />
+
+            <!-- Aquarius Title -->
+            <TextView
+                android:id="@+id/aquariusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquarius(कुंभ)"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="12dp" />
+
+            <!-- Aquarius Description -->
+            <TextView
+                android:id="@+id/aquariusDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aquarius is known for innovation, independence, and a visionary mindset. People born under Aquarius value originality, freedom, and humanitarian ideals. They enjoy thinking differently and exploring new ideas. Although friendly and social, Aquarius can sometimes appear emotionally distant or unpredictable."
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Traits Header -->
+            <TextView
+                android:id="@+id/traitsHeaderAquarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Traits"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Traits List -->
+            <TextView
+                android:id="@+id/traitsListAquarius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Independent\n• Creative\n• Intellectual\n• Humanitarian\n• Unique\n• Unpredictable"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Compatible Signs Header -->
+            <TextView
+                android:id="@+id/compatibleHeaderAquarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Compatible Signs"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Compatible Signs List -->
+            <TextView
+                android:id="@+id/compatibleSignsAquarius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Gemini\n• Libra\n• Sagittarius\n• Aries"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

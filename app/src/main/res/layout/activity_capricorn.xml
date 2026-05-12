@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Capricorn">
+
+    <!-- 🔹 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCapricorn"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/system_on_error_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Capricorn"
+        app:titleTextColor="#FFFFFF" />
+
+    <!-- 🔹 Scroll area for content -->
+    <ScrollView
+        android:id="@+id/scrollViewCapricorn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarCapricorn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Capricorn Symbol -->
+            <ImageView
+                android:id="@+id/capricornSymbol"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/capricorn"
+                android:contentDescription="Capricorn Icon" />
+
+            <!-- Capricorn Title -->
+            <TextView
+                android:id="@+id/capricornTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capricorn(मकर)"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="12dp" />
+
+            <!-- Capricorn Description -->
+            <TextView
+                android:id="@+id/capricornDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capricorn is known for discipline, ambition, and strong determination. People born under Capricorn value structure, responsibility, and long-term goals. They are hardworking, practical, and reliable. Although calm and reserved, they can sometimes appear serious or overly focused on success."
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Traits Header -->
+            <TextView
+                android:id="@+id/traitsHeaderCapricorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Traits"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Traits List -->
+            <TextView
+                android:id="@+id/traitsListCapricorn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Ambitious\n• Disciplined\n• Practical\n• Responsible\n• Patient\n• Reserved"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Compatible Signs Header -->
+            <TextView
+                android:id="@+id/compatibleHeaderCapricorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Compatible Signs"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Compatible Signs List -->
+            <TextView
+                android:id="@+id/compatibleSignsCapricorn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Taurus\n• Virgo\n• Scorpio\n• Pisces"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

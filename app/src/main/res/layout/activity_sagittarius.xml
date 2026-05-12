@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sagittarius">
+
+    <!-- 🔹 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSagittarius"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/system_on_error_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Sagittarius"
+        app:titleTextColor="#FFFFFF" />
+
+    <!-- 🔹 Scroll area for content -->
+    <ScrollView
+        android:id="@+id/scrollViewSagittarius"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarSagittarius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Sagittarius Symbol -->
+            <ImageView
+                android:id="@+id/sagittariusSymbol"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/san"
+                android:contentDescription="Sagittarius Icon" />
+
+            <!-- Sagittarius Title -->
+            <TextView
+                android:id="@+id/sagittariusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sagittarius(धनु)"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="12dp" />
+
+            <!-- Sagittarius Description -->
+            <TextView
+                android:id="@+id/sagittariusDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sagittarius is known for adventure, curiosity, and optimism. People born under Sagittarius love freedom, exploration, and learning new things. They are open-minded, enthusiastic, and enjoy seeking truth. Although friendly and honest, Sagittarius can sometimes be blunt or restless."
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Traits Header -->
+            <TextView
+                android:id="@+id/traitsHeaderSagittarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Traits"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Traits List -->
+            <TextView
+                android:id="@+id/traitsListSagittarius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Adventurous\n• Optimistic\n• Honest\n• Independent\n• Curious\n• Restless"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Compatible Signs Header -->
+            <TextView
+                android:id="@+id/compatibleHeaderSagittarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Compatible Signs"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp" />
+
+            <!-- Compatible Signs List -->
+            <TextView
+                android:id="@+id/compatibleSignsSagittarius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Aries\n• Leo\n• Aquarius\n• Libra"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

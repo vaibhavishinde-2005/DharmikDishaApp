@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="22dp"
+
+    app:cardElevation="4dp"
+    android:backgroundTint="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_view"
+        android:padding="16dp">
+
+        <!-- Profile/Image -->
+
+        <!-- Service Name -->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Service Image"
+            android:src="@drawable/panditimg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ServiceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Service Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@id/imageView3"
+            app:layout_constraintEnd_toStartOf="@id/deleteButton"
+            app:layout_constraintTop_toTopOf="@id/imageView3" />
+
+        <!-- Service Provider Name -->
+        <TextView
+            android:id="@+id/ServicerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Service Provider"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="@id/ServiceName"
+            app:layout_constraintEnd_toEndOf="@id/ServiceName"
+            app:layout_constraintTop_toBottomOf="@id/ServiceName"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.100"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/ServiceName"
+            app:layout_constraintTop_toBottomOf="@id/ServicerName"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Delete Button -->
+        <ImageView
+            android:id="@+id/deleteButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Delete Button"
+            app:srcCompat="@drawable/delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

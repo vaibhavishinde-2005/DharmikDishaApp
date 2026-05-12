@@ -26,7 +26,7 @@ Dharmik Disha is an Android application developed using Kotlin and Firebase that
 
 ## 📱 Screenshots
 Login Page 
-<img width="1235" height="2646" alt="image" src="https://github.com/user-attachments/assets/cb8cb014-56e3-4703-9c8f-02e87f170ecd" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/cb8cb014-56e3-4703-9c8f-02e87f170ecd" />
 
 SignUp Page
 <img width="1235" height="2646" alt="image" src="https://github.com/user-attachments/assets/cb168b41-c284-48cb-93d1-973ba1a7828e" />
